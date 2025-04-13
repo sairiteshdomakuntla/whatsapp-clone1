@@ -41,11 +41,11 @@ app.use((req, res, next) => {
   next();
 });
 
-// using middlewares
 app.use(cors({
-  origin: 'http://localhost:3000', // or your frontend domain
+  origin: 'https://whatsapp-clone-lc1g.onrender.com', // Use the deployed frontend URL
   credentials: true
 }));
+
 // console.log(process.env.FRONTEND_URL);
 app.use(express.json({ limit: '20mb' }));
 app.use(cookieParser());

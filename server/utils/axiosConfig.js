@@ -1,13 +1,12 @@
 import axios from 'axios';
 
 // Configure axios defaults
-axios.defaults.baseURL = 'http://localhost:5000';
+axios.defaults.baseURL = 'https://whatsapp-clone1-0x7d.onrender.com';  // replace this with your deployed backend URL
 axios.defaults.withCredentials = true;
 
 // Add request interceptor
 axios.interceptors.request.use(
   (config) => {
-    // You can add any common headers or transformations here
     return config;
   },
   (error) => {
@@ -21,10 +20,8 @@ axios.interceptors.response.use(
     return response;
   },
   (error) => {
-    // Handle common error cases here
     if (error.response?.status === 401) {
       // Handle unauthorized access
-      // console.log('Unauthorized access');
     }
     return Promise.reject(error);
   }
