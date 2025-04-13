@@ -6,7 +6,7 @@ A real-time chat application built with the **MERN stack**, featuring **role-bas
 
 ## 🌐 Live Preview
 
-[Add screen recording link here]
+[[Demo Video Link for now]](https://drive.google.com/file/d/1dfKacmrbttGCwC8vMlZG7BiXli0dSy_4/view?usp=sharing)
 
 ---
 
